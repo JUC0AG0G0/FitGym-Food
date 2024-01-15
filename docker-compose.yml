@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: FitGym&Food
+      MYSQL_USER: martin
+      MYSQL_PASSWORD: tacos
+    ports:
+      - "3306:3306"
+    networks:
+      - mynetwork
+
+  proftp:
+    image: stilliard/pure-ftpd:latest
+    container_name: proftp-container
+    ports:
+      - "21:21"
+    volumes:
+      - ./ftp-data:/home/ftpusers
+    networks:
+      - mynetwork
+
+  apache:
+    image: httpd:latest
+    container_name: apache-container
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/usr/local/apache2/htdocs
+    networks:
+      - mynetwork
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin-container
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    ports:
+      - "8080:80"
+    networks:
+      - mynetwork
+    depends_on:
+      - mysql
+
+networks:
+  mynetwork:
