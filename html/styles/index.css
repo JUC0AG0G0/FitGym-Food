@@ -11,13 +11,6 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
-    height: 100vh;
-    width: 100%;
-    background-image: url(https://www.54pm.fr/wp-content/uploads/2020/08/club-de-sport-mulhouse.jpg);
-    background-size: cover;
-}
-
 .navbar{
     position: absolute;
     padding: 50px;
@@ -26,6 +19,7 @@ header{
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .navbar a{
