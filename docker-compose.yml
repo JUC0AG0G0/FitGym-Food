@@ -6,7 +6,7 @@ services:
     container_name: mysql-container
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: FitGym&Food
+      MYSQL_DATABASE: FitGymFood
       MYSQL_USER: martin
       MYSQL_PASSWORD: tacos
     ports:
