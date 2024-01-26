@@ -1,9 +1,3 @@
--- Supprimer la base de données si elle existe
-DROP DATABASE IF EXISTS FitGymFood;
-
--- Créer la base de données
-CREATE DATABASE FitGymFood;
-
 -- Utiliser la base de données
 USE FitGymFood;
 
@@ -24,10 +18,20 @@ CREATE TABLE Utilisateurs (
     FOREIGN KEY (idDroit) REFERENCES Droits(idDroit)
 );
 
--- Insérer l'utilisateur administrateur avec tous les droits
-INSERT INTO Droits (nomDroit) VALUES ('Administrateur');
+-- Insérer les droits
+INSERT INTO Droits (idDroit, nomDroit) VALUES (1, 'Administrateur');
+
+-- Insérer l'utilisateur administrateur avec les droits
 INSERT INTO Utilisateurs (prenom, nom, adresseEmail, motDePasse, idDroit) 
 VALUES ('NomAdmin', 'PrenomAdmin', 'admin@example.com', 'motdepasseadmin', 1);
+
+
+-- Créer la table des catégories
+CREATE TABLE Categories (
+    idCategorie INT PRIMARY KEY,
+    nomCategorie VARCHAR(50),
+    descriptionCategorie TEXT
+);
 
 -- Créer la table des produits
 CREATE TABLE Produits (
@@ -49,11 +53,4 @@ CREATE TABLE Avis (
     note FLOAT,
     FOREIGN KEY (idProduit) REFERENCES Produits(idProduit),
     FOREIGN KEY (idUtilisateur) REFERENCES Utilisateurs(idUtilisateur)
-);
-
--- Créer la table des catégories
-CREATE TABLE Categories (
-    idCategorie INT PRIMARY KEY,
-    nomCategorie VARCHAR(50),
-    descriptionCategorie TEXT
 );
