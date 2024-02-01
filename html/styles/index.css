@@ -3,12 +3,20 @@
     padding: 0px;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 body{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    background-color: #1f1f1f;
+}
+
+a{
+    color: black;
 }
 
 .navbar{
@@ -112,6 +120,8 @@ body{
 
 
 footer{
+    position: relative;
+    top: 85%;
     display: flex;
     flex-wrap: wrap;
     margin-top: auto;
@@ -197,4 +207,94 @@ ul li a:hover{
     .footer-col{
         width: 100%;
     }
+}
+
+
+
+.triangle{
+    position: relative;
+    top: 80%;
+    left: -2%;
+    width: 110vw;
+    height: 300px;
+    rotate: -4deg;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+
+    
+}
+
+.headertitle{
+    padding-top: 80px;
+}
+
+main{
+    position: relative;
+    top: 80%;
+    margin-bottom: 200px;
+    color: #000;
+}
+
+.concept{
+    background-color: coral;
+    position: relative;
+    rotate: -4deg;
+    width: 105vw;
+    height: 400px;
+    left: -2%;
+    margin-bottom: 100px;
+}
+
+.salle{
+    background-color: lightgreen;
+    position: relative;
+    rotate: -4deg;
+    width: 105vw;
+    height: 400px;
+    left: -2%;
+    margin-bottom: 100px;
+}
+
+.self{
+    background-color: lightseagreen;
+    position: relative;
+    rotate: -4deg;
+    width: 105vw;
+    height: 400px;
+    left: -2%;
+    margin-bottom: 100px;
+}
+
+.section-description{
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    display: flex;
+}
+
+
+.imgsection{
+    position: absolute;
+    left: 45vw;
+    height: 403px;
+    width: auto;
+    transition: transform .5s ease;
+
+}
+
+
+
+.section-image{
+    position: absolute;
+    top: -51px;
+    height: 402px;
+    width: auto;
+}
+
+
+
+.imgsection:hover {
+    opacity: 70%;
+
 }
