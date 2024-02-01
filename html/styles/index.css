@@ -15,6 +15,14 @@ body{
     background-color: #1f1f1f;
 }
 
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://www.54pm.fr/wp-content/uploads/2020/08/club-de-sport-mulhouse.jpg);
+    background-size: cover;
+}
+
+
 a{
     color: black;
 }
@@ -237,6 +245,7 @@ main{
 }
 
 .concept{
+    opacity: 0.8;
     background-color: coral;
     position: relative;
     rotate: -4deg;
@@ -247,6 +256,7 @@ main{
 }
 
 .salle{
+    opacity: 0.8;
     background-color: lightgreen;
     position: relative;
     rotate: -4deg;
@@ -257,6 +267,7 @@ main{
 }
 
 .self{
+    opacity: 0.8;
     background-color: lightseagreen;
     position: relative;
     rotate: -4deg;
@@ -297,4 +308,24 @@ main{
 .imgsection:hover {
     opacity: 70%;
 
+}
+
+
+.section-content{
+    height: 300px;
+    width: 500px;
+    
+}
+
+
+.btn{
+    position: absolute;
+    bottom: 0px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+main a:hover{
+    
+    color: #1f1f1f;
 }
