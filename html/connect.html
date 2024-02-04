@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Gym & Food</title>
+    <link rel="icon" type="image/png" href="./media/img/logo.png">
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <a href="#" class="logo">Gym Fit & Food</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="./self.html">Le self</a></li>
+                <li><a href="./salle.html">La salle</a></li>
+                <li><a href="./boutique.html">Notre boutique</a></li>
+                <li><a href="./equipe.html">Notre équipe</a></li>
+                <li><a href="./concept.html">Notre concept</a></li>
+                <li><a href="./contact.html">Prenez contact</a></li>
+                <li><a href="./connect.html">Connectez-vous</a></li>
+            </ul>
+        </div>
+        <img src="https://cdn.icon-icons.com/icons2/2024/PNG/512/lines_menu_burger_icon_123889.png" alt="menu-hamburger" class="menu-hamburger">
+        
+    </nav>
+    <header>
+        
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <div class="footer-col">
+            <h4>Tarif</h4>
+            <ul>
+                <li><a href="./salle.html">Acces à la salle</a></li>
+                <li><a href="./self.html">Nos repas</a></li>
+                <li><a href="./boutique.html">Produit dérivé</a></li>
+            </ul>
+        </div>        
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="#">numero</a></li>
+                <li><a href="#">e-mail</a></li>
+                <li><a href="#">lieu</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>   
+        <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#">Reglement interieur</a></li>
+                <li><a href="#">condition generale</a></li>
+                <li><a href="#">condition d'utilisation</a></li>
+            </ul>
+        </div>   
+        <div class="footer-col">
+            <h4>Suivez-nous</h4>
+            <div class="links">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/JUC0AG0G0/FitGym-Food"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>
