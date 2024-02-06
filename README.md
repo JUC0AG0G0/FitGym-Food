@@ -22,4 +22,10 @@ Site web pour une salle de sport factice.
 
  5) Vous pourrez ensuite acceder au site web 
 
-localhost:80
+
+
+
+
+
+
+https://juc0ag0g0.github.io/FitGym-Food/
